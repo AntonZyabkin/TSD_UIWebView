@@ -10,6 +10,7 @@ import WebKit
 
 class WebViewController: UIViewController {
 
+    let testButton = UIButton ()
     
     private let webview : WKWebView = {
         
@@ -42,6 +43,7 @@ class WebViewController: UIViewController {
         view.addSubview(webview)
         webview.load(URLRequest(url: url))
         doneButton ()
+        testButton.isge
         refreshButton ()
     }
     
