@@ -33,6 +33,13 @@ class ViewController: UIViewController {
     
     @objc func didTaped () {
         
+        guard let url = URL (string: "https://www.ozon.ru/") else {
+            print ("faled")
+            return
+        }
+         let vc = WebViewController (url: url, title: "Google")
+        let navVc = UINavigationController (rootViewController: vc)
+        present(navVc, animated: true)
     }
 }
 
